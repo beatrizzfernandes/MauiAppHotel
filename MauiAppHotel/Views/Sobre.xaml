@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource MidnightBlue}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="20">
+
+        <Label 
+            Text="Sobre o Aplicativo"
+            FontFamily="DMSerifTextItalic"
+               FontSize="38"
+               TextColor="{StaticResource White}"
+               HorizontalOptions="Center" />
+
+        <Frame Padding="10" Margin="10" CornerRadius="10" BorderColor="{StaticResource MidnightBlue}">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Este aplicativo foi desenvolvido para facilitar o gerenciamento de hospedagens."
+                       FontSize="15" TextColor="{StaticResource MidnightBlue}" />
+
+                <Label Text="Desenvolvido por: Beatriz Fernandes da Silva"
+                       FontSize="15" TextColor="{StaticResource MidnightBlue}" />
+
+                <Label Text="Versão: 1.0"
+                       FontSize="15" TextColor="{StaticResource MidnightBlue}" />
+
+                <Label Text="Data de Lançamento: 28/10/2024"
+                       FontSize="15" TextColor="{StaticResource MidnightBlue}" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                FontSize="15"
+                TextColor="MidnightBlue"
+                BackgroundColor="{StaticResource White}"
+                Clicked="OnVoltarClicked"
+                HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
